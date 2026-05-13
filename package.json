@@ -1,0 +1,43 @@
+{
+  "name": "sc-payload-ses",
+  "version": "1.0.0",
+  "description": "AWS SES email adapter for Payload CMS",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schematical/sc-payload-ses"
+  },
+  "author": "Schematical",
+  "homepage": "https://github.com/schematical/sc-payload-ses#readme",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "payload",
+    "payloadcms",
+    "email",
+    "aws",
+    "ses",
+    "adapter"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@aws-sdk/client-ses": "^3.0.0",
+    "payload": "^3.0.0"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-ses": "^3.600.0",
+    "@types/node": "^25.7.0",
+    "payload": "^3.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^4.1.6"
+  }
+}
